@@ -1,0 +1,136 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.text {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.list-group-item.active-section {
+  border-bottom: 3px solid #42b2f3;
+}
+
+.ralla{
+  position: relative;
+  bottom: 23px;
+  border-bottom: 3px solid #6d6d6d;
+  z-index: -1;
+}
+
+
+.list {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.list-group-item {
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #000;
+  margin-right: 5px;
+}
+
+.input-group {
+  margin-top: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilo personalizado para el input y el botón */
+.form-control {
+  width: 580px; /* Ajustar el ancho del input */
+  height: 32px; /* Ajustar la altura del input */
+  border: 2px solid #dcdcdc; /* Establecer el borde del input */
+  border-radius: 15px;
+  padding: 10px; /* Agregar un poco de espacio interno */
+}
+
+.btn-primary {
+  margin-left: 45px;
+  width: 115px; /* Ajustar el ancho del botón */
+  height: 60px; /* Ajustar la altura del botón */
+  font-size: 18px;
+  border: 2px solid #dcdcdc; /* Establecer el borde del botón */
+  background-color: #2f80ed;
+  color: #fff;
+  border-radius: 15px;
+  cursor: pointer; /* Cambiar el cursor al pasar por el botón */
+}
+
+/* Estilo para separar la tabla de tareas del área de entrada de texto */
+.table {
+  margin-top: 30px;
+}
+
+/* Estilo para agregar un margen entre la tabla de tareas y el área de entrada de texto */
+.table,
+.input-group {
+  margin-top: 20px;
+}
+
+/* Estilo personalizado para el checkbox */
+.checkbox-custom {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  border: 2px solid #2f80ed; /* Color del borde del checkbox */
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 10px; /* Espacio entre el checkbox y el texto */
+}
+
+/* Estilo para el checkbox cuando está marcado (checked) */
+.checkbox-custom:checked {
+  background-color: #2f80ed; /* Cambia el color de fondo al azul */
+  border-color: #2f80ed; /* Cambia el color del borde al azul */
+}
+
+.btn-danger {
+  width: 150px;
+  height: 45px;
+  font-size: 15px;
+  border: none;
+  background-color: #f85858;
+  color: #fff;
+  border-radius: 12px;
+  display: none;
+  position: relative;
+}
+
+.btn-danger svg {
+  position: relative;
+  top: 3px;
+}
+
+.btn_svg {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Agregar línea a través del texto cuando el checkbox está marcado */
+td input[type="checkbox"]:checked + span {
+  text-decoration: line-through;
+}
+
+.delete-task-btn{
+  border: none;
+  width: 45px;
+  background-color: #fff;
+}
+
+.delete-task-btn img{
+  position: relative;
+  left: 1900%;
+  width: 17px;
+}
+

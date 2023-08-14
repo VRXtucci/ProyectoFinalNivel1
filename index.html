@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>To-Do App</title>
+</head>
+<body>
+  <div class="container">
+    <h1 class="text">#todo</h1>
+<div class="list">
+      <a class="list-group-item active-section" href="#" onclick="completeTask('all')">All</a>
+      <a class="list-group-item active-section" href="#" onclick="completeTask('active')">Active</a>
+      <a class="list-group-item active-section" href="#" onclick="completeTask('completed')">Completed</a>
+    </div>
+
+    <nav class="ralla"></nav>
+
+    <div class="input-group">
+      <input type="text" class="form-control" placeholder="add details" id="taskDetailsInput">
+      <div class="input-group-append">
+        <button class="btn btn-primary" type="sumit" id="addDetailsBtn" onclick="addTask()">Add</button>
+      </div>
+    </div>
+
+    <table class="table" id="taskTable">
+      <tbody>
+        <!-- Aquí se agregarán las filas de la tabla con las tareas -->
+      </tbody>
+    </table>
+
+    <!-- Tabla para mostrar las tareas completadas -->
+    <table class="table" id="completedTasksTable">
+      <tbody>
+        <!-- Aquí se agregarán las filas de la tabla con las tareas completadas -->
+      </tbody>
+    </table>
+
+    <!-- Botón "Delete All" para tareas completadas -->
+    <div class="btn_svg" id="deleteCompletedBtnSection">
+      <button class="btn btn-danger" id="deleteCompletedBtn" onclick="deleteAllCompleted()">
+        Delete All
+    </button
+    </div>
+
+    <script src="./script.js"></script>
+  </div>
+</body>
+</html>
+
+
